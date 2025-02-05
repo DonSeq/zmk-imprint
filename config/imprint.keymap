@@ -6,7 +6,7 @@
 &sk { release-after-ms = <2000>; };
 
 / {
-    chosen { zmk,matrix-transform = &imprint_function_row; };
+    chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
     behaviors {
         shiftdance: shiftdance {
