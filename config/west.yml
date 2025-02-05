@@ -12,7 +12,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-keyboards
-      remote: Cyboard-DigitalTailor
+      remote: DonSeq
       revision: main
       import: config/west.yml
   self:
