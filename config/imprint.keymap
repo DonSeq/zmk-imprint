@@ -119,7 +119,7 @@
         <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
         <&zip_xy_scaler 5 6>,
         // activate layer 3 within 500ms of the trackball moving,,,,,
-        <&zip_temp_layer 3 400>;
+        <&zip_temp_layer 3 600>;
 };
 
 //left hand trackball configuration
