@@ -46,14 +46,14 @@
 
         base_layer {
             bindings = <
-&kp LS(GRAVE)     &kp F1         &kp F2          &kp F3    &kp F4                &kp F5                          &kp F6   &kp F7                 &kp F8         &kp F9           &kp F10           &kp F11
-&kp GRAVE         &kp N1         &kp N2          &kp N3    &kp N4                &kp N5                          &kp N6   &kp N7                 &kp N8         &kp N9           &kp N0            &kp PIPE
-&kp TAB           &kp Q          &kp W           &kp E     &kp R                 &kp T                           &kp Y    &kp U                  &kp I          &kp O            &kp P             &kp BSLH
-&mt LCTRL ESCAPE  &kp A          &kp S           &kp D     &kp F                 &kp G                           &kp H    &kp J                  &kp K          &kp L            &kp SEMI          &kp SQT
-&shiftdance       &kp Z          &kp X           &kp C     &kp V                 &kp B                           &kp N    &kp M                  &kp COMMA      &kp DOT          &kp FSLH          &kp RSHFT
-&kp LCTRL         &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &kp LEFT_PARENTHESIS                                           &kp RIGHT_PARENTHESIS  &kp RBKT       &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
-                                                           &kp LEFT_CONTROL      &kp LEFT_SHIFT  &kp DELETE      &mo 4    &mo 2                  &lt 4 SPACE
-                                                           &kp BSPC              &lt 1 SPACE     &llt 2 ENTER    &kp DEL  &lt 1 ENTER            &kp BACKSPACE
+&kp LS(GRAVE)     &kp F1         &kp F2          &kp F3    &kp F4                &kp F5                          &kp F6      &kp F7                 &kp F8         &kp F9           &kp F10           &kp F11
+&kp GRAVE         &kp N1         &kp N2          &kp N3    &kp N4                &kp N5                          &kp N6      &kp N7                 &kp N8         &kp N9           &kp N0            &kp PIPE
+&kp TAB           &kp Q          &kp W           &kp E     &kp R                 &kp T                           &kp Y       &kp U                  &kp I          &kp O            &kp P             &kp BSLH
+&mt LCTRL ESCAPE  &kp A          &kp S           &kp D     &kp F                 &kp G                           &kp H       &kp J                  &kp K          &kp L            &kp SEMI          &kp SQT
+&shiftdance       &kp Z          &kp X           &kp C     &kp V                 &kp B                           &kp N       &kp M                  &kp COMMA      &kp DOT          &kp FSLH          &kp RSHFT
+&kp LCTRL         &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &kp LEFT_PARENTHESIS                                              &kp RIGHT_PARENTHESIS  &kp RBKT       &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
+                                                           &kp LEFT_CONTROL      &kp LEFT_SHIFT  &kp DELETE      &kp C_MUTE  &kp PIPE               &lt 4 SPACE
+                                                           &kp BSPC              &lt 1 SPACE     &llt 2 ENTER    &kp DEL     &lt 1 ENTER            &kp BACKSPACE
             >;
         };
 
@@ -72,14 +72,14 @@
 
         shortcuts {
             bindings = <
-&studio_unlock  &none               &none           &kp C_MUTE       &kp C_VOL_DN  &kp C_VOLUME_UP            &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF
-&none           &none               &none           &none            &none         &none                      &none            &none            &none            &none            &none            &none
-&kp LA(TAB)     &kp PAGE_UP         &kp HOME        &kp UP_ARROW     &kp END       &kp PAGE_DOWN              &kp MINUS        &kp N7           &kp N8           &kp N9           &none            &none
-&none           &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT     &kp LC(RIGHT)              &kp EQUAL        &kp N4           &kp N5           &kp N6           &none            &none
-&none           &lsk LEFT_GUI       &lsk LEFT_ALT   &lsk LEFT_SHIFT  &lsk LCTRL    &none                      &kp PLUS         &kp N1           &kp N2           &kp N3           &kp ENTER        &none
-&none           &kp LEFT_GUI        &none           &none            &none                                                     &kp N0           &kp N0           &kp DOT          &kp ENTER        &none
-                                                                     &trans        &trans           &trans    &trans           &trans           &trans
-                                                                     &trans        &trans           &trans    &trans           &trans           &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -98,14 +98,14 @@
 
         system {
             bindings = <
-&bootloader     &trans        &trans        &trans        &bt BT_CLR    &bt BT_CLR_ALL            &trans           &trans  &trans  &trans  &trans  &bootloader
-&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4              &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans        &trans                    &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans        &trans                    &rgb_ug RGB_EFR  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans        &trans                    &trans           &trans  &trans  &trans  &trans  &trans
-&studio_unlock  &trans        &trans        &trans        &trans                                                   &trans  &trans  &trans  &trans  &trans
-                                                          &trans        &trans          &trans    &trans           &trans  &trans
-                                                          &trans        &trans          &trans    &trans           &trans  &trans
+&bootloader  &trans        &trans        &trans        &bt BT_CLR    &bt BT_CLR_ALL            &studio_unlock   &trans  &trans  &trans  &trans  &bootloader
+&trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4              &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans
+&trans       &trans        &trans        &trans        &trans        &trans                    &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans
+&trans       &trans        &trans        &trans        &trans        &trans                    &rgb_ug RGB_EFR  &trans  &trans  &trans  &trans  &trans
+&trans       &trans        &trans        &trans        &trans        &trans                    &trans           &trans  &trans  &trans  &trans  &trans
+&sys_reset   &trans        &trans        &trans        &trans                                                   &trans  &trans  &trans  &trans  &trans
+                                                       &trans        &trans          &trans    &trans           &trans  &trans
+                                                       &trans        &trans          &trans    &trans           &trans  &trans
             >;
         };
     };
@@ -115,10 +115,10 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // this gets it to the default installation orientation,,
+        // this gets it to the default installation orientation,,,
         <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
         <&zip_xy_scaler 4 3>,
-        // activate layer 3 within 500ms of the trackball moving,
+        // activate layer 3 within 500ms of the trackball moving,,
         <&zip_temp_layer 3 500>;
 };
 
@@ -126,12 +126,12 @@
 
 &trackball_central_listener {
     input-processors =
-        // this gets it to the default installation orientation,,
+        // this gets it to the default installation orientation,,,
         <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
-        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,
+        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,
         <&zip_xy_scaler 2 3>,
-        // make this trackball output scrolling events by default instead of cursor movement,,
+        // make this trackball output scrolling events by default instead of cursor movement,,,
         <&zip_xy_to_scroll_mapper>,
-        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,
+        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
 };
