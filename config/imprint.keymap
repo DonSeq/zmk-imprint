@@ -91,7 +91,7 @@
         // this gets it to the default installation orientation,
         <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>;
         // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),
-        <&zip_xy_scaler 3 2>,
+        <&zip_xy_scaler 3 2>;
         // activate layer 3 within 500ms of the trackball moving
         <&zip_temp_layer 3 500>;
 };
