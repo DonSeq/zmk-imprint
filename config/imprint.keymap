@@ -53,7 +53,7 @@
 &shiftdance       &kp Z          &kp X           &kp C     &kp V                 &kp B                        &kp N    &kp M                  &kp COMMA  &kp DOT          &kp FSLH          &shiftdance
 &kp LCTRL         &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &kp LEFT_PARENTHESIS                                        &kp RIGHT_PARENTHESIS  &kp RBKT   &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
                                                            &kp PIPE              &kp TILDE    &kp LEFT_ALT    &kp TAB  &kp PLUS               &kp EQUAL
-                                                           &kp BSPC              &lt 3 SPACE  &llt 2 ENTER    &kp DEL  &lt 4 ENTER            &kp UNDER
+                                                           &kp BSPC              &lt 3 SPACE  &llt 2 ENTER    &kp DEL  &lt 3 ENTER            &kp UNDER
             >;
         };
 
@@ -66,7 +66,7 @@
 &kp LEFT_SHIFT  &kp Z          &kp X           &kp C     &kp V                 &kp B                           &kp N    &kp M                  &kp COMMA  &kp DOT          &kp FSLH          &shiftdance
 &kp LCTRL       &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &kp LEFT_PARENTHESIS                                           &kp RIGHT_PARENTHESIS  &kp RBKT   &kp RIGHT_BRACE  &kp GREATER_THAN  &kp RCTRL
                                                          &kp LEFT_CONTROL      &kp LEFT_SHIFT  &kp LEFT_ALT    &kp TAB  &kp PLUS               &kp EQUAL
-                                                         &kp BSPC              &lt 3 SPACE     &llt 2 ENTER    &kp DEL  &lt 4 ENTER            &kp UNDER
+                                                         &kp BSPC              &lt 3 SPACE     &llt 2 ENTER    &kp DEL  &lt 3 ENTER            &kp UNDER
             >;
         };
 
@@ -128,10 +128,10 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // this gets it to the default installation orientation,,,,,,,,,,,,,,,,,,
+        // this gets it to the default installation orientation,,,,,,,,,,,,,,,,,,,
         <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
         <&zip_xy_scaler 5 6>,
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 };
 
@@ -139,12 +139,12 @@
 
 &trackball_central_listener {
     input-processors =
-        // this gets it to the default installation orientation,,,,,,,,,,,,,,,,,,
-        // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,,,,,
-        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,,,,,,,,,,,,,
+        // this gets it to the default installation orientation,,,,,,,,,,,,,,,,,,,
+        // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,,,,,,
+        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,,,,,,,,,,,,,,
         <&zip_xy_scaler 1 5>,
-        // make this trackball output scrolling events by default instead of cursor movement,,,,,,,,,,,,,,,,,,
+        // make this trackball output scrolling events by default instead of cursor movement,,,,,,,,,,,,,,,,,,,
         <&zip_xy_to_scroll_mapper>,
-        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,,,,,,,,,,,,,
+        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,,,,,,,,,,,,,,
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
 };
